@@ -1,0 +1,12 @@
+- name: generate host entries
+  template:
+    src: hosts.j2
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: 0644
+- name: disable firewall
+  systemd:
+    name: firewalld
+    state: stopped
+    enabled: no

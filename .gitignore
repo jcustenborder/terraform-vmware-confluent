@@ -1,3 +1,10 @@
 .idea/
 .terraform/
+.Python
+*.retry
+bin/
+group_vars/
+include/
+lib/
 terraform.*
+venv/
