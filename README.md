@@ -37,6 +37,7 @@ ssh_key_file =
 
 ```bash
 virtualenv --python=python3.5 .
+source bin/activate
 pip install -r requirements.txt 
 cd library
 git clone https://github.com/confluentinc/cp-ansible.git cp-ansible
@@ -55,4 +56,3 @@ Install the Confluent Platform
 ansible-playbook -i ./inventory.py all.yml
 ```
 
-Add 
